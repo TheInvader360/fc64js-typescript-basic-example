@@ -2,6 +2,9 @@ import 'fc64js';
 
 fc64Init(romInit, romLoop);
 
+//const romPalette = [0x000000, 0x55415f, 0x646964, 0xd77355, 0x508cd7, 0x64b964, 0xe6c86e, 0xdcf5ff]; // db8
+//fc64Init(romInit, romLoop, romPalette);
+
 let x = 60;
 let y = 60;
 let color = 4;
@@ -32,3 +35,4 @@ function romLoop() {
   }
   drawPixel(x, y, color);
 }
+
